@@ -38,10 +38,15 @@ app.get('/api/timestamp/:date_string?',
                           "unix": new Date().getTime(),
                           "utc" : new Date().toUTCString() 
                         })
-                      } else if (req.params.date_string.length===10){
+                      } else if (!isNaN(new Date(req.params.date_string).getTime())){
                         res.json({
                           "unix": new Date(req.params.date_string).getTime(),
                           "utc" : new Date(req.params.date_string).toUTCString() 
+                        })
+                      } else if (!isNaN(new Date(parseInt(req.params.date_string)).getTime())){
+                        res.json({
+                          "unix": new Date(parseInt(req.params.date_string)).getTime(),
+                          "utc" : new Date(parseInt(req.params.date_string)).toUTCString() 
                         })
                       } else {
                         res.json({
