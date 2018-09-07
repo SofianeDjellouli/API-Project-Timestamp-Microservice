@@ -18,3 +18,6 @@ e.g. `{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}`.
 * https://timestamp-api--.glitch.me/api/timestamp/1450137600000
 ### Example output
 * { "unix": 1450137600, "natural": "December 15, 2015" }
+
+## My code
+https://github.com/SofianeDjellouli/Timestamp-API/blob/master/server.js
