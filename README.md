@@ -19,5 +19,6 @@ e.g. `{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}`.
 ### Example output
 * { "unix": 1450137600, "natural": "December 15, 2015" }
 
-## My code
+## My code with comments
+This project being part of the FreeCodeCamp curriculum, the front end was already built. I only had to code the following file:  
 https://github.com/SofianeDjellouli/Timestamp-API/blob/master/server.js
